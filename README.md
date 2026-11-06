@@ -8,6 +8,10 @@ A modern, responsive, and user-centric website built for **Sri Siva Medicals (Ka
 
 ## 🌟 Key Features
 
+- **Progressive Web App (PWA)**:
+  - Installable directly to mobile home screen on Android (native prompt banner) and iOS Safari (step-by-step installation guide).
+  - Fast offline support with Service Worker pre-caching.
+  - Native standalone app experience with custom red branding theme (`#e53935`).
 - **Responsive Modern Design**: Optimized for all devices (smartphones, tablets, laptops, and desktop screens) using clean CSS flexbox and grid layouts.
 - **Direct WhatsApp Integration**:
   - One-click prescription upload and enquiry directly via WhatsApp (`+91 9994260284`).
@@ -24,6 +28,7 @@ A modern, responsive, and user-centric website built for **Sri Siva Medicals (Ka
 - **Interactive UI Elements**:
   - Mobile hamburger navigation with click-outside auto-close.
   - Quick action floating buttons for emergency & enquiry contact.
+  - Native app install card with zero-overlap floating button positioning.
   - Smooth scroll and polished hover interactions.
 
 ---
@@ -32,19 +37,25 @@ A modern, responsive, and user-centric website built for **Sri Siva Medicals (Ka
 
 ```text
 Medical-Gangeyan/
-├── images/                  # Store, hero, and gallery images
-│   ├── gangeyan.png
-│   ├── image.png
+├── images/                  # Store, hero, gallery & PWA icon assets
+│   ├── image.png            # Pharmacy logo
+│   ├── gangeyan.png         # Mr. Gangeyan photo
+│   ├── owner.png            # Owner photo asset
+│   ├── icon-192.png         # PWA Android/iOS icon 192x192
+│   ├── icon-512.png         # PWA Android/iOS icon 512x512
 │   ├── shop-2.jpeg
 │   ├── shop-3.jpeg
 │   ├── shop-4.jpeg
 │   ├── shop-5.jpeg
 │   └── shop-6.jpeg
-├── index.html               # Main homepage (entry point for static hosting)
+├── index.html               # Main homepage (entry point for static & PWA hosting)
 ├── index medi.html          # Alternate / source homepage file
 ├── shop.html                # Pharmacy gallery & showcase page
-├── style.css                # Global styling, animations, and responsive breakpoints
-├── script.js                # Mobile navigation and WhatsApp form handler
+├── style.css                # Global styling, animations, PWA banner & responsive breakpoints
+├── script.js                # Mobile navigation, WhatsApp form handler & PWA installer
+├── manifest.json            # Web App Manifest for mobile installation
+├── service-worker.js        # Service Worker with offline pre-caching & stale-while-revalidate
+├── vercel.json              # Vercel deployment configuration & cache headers
 ├── .gitignore               # Ignored system and temporary files
 ├── LICENSE                  # MIT License
 └── README.md                # Project documentation

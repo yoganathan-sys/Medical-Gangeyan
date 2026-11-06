@@ -1,0 +1,30 @@
+{
+  "name": "Sri Siva Medicals",
+  "short_name": "Sri Siva",
+  "description": "Sri Siva Medicals - Your trusted healthcare partner. Prescription support, healthcare guidance and pharmacy services in Kangeyan.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#e53935",
+  "background_color": "#ffffff",
+  "categories": [
+    "medical",
+    "health",
+    "shopping"
+  ],
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

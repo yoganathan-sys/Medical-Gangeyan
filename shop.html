@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Medical Shop | Sri Siva Medicals</title>
 
+    <!-- PWA Settings -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#e53935">
+
+    <!-- Apple / iOS Web App Settings -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Sri Siva">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/icon-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="images/icon-512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -364,9 +382,68 @@
 
     <!-- FOOTER -->
     <footer class="shop-footer">
-        © 2026 Sri Siva Medicals. All Rights Reserved.
+        &copy; 2026 Sri Siva Medicals. All Rights Reserved.
         | Your Health, Our Priority.
     </footer>
+
+    <!-- =====================================================
+         PWA INSTALL BANNER
+    ===================================================== -->
+    <div id="pwaInstallBanner" class="pwa-install-banner" aria-hidden="true" role="dialog" aria-label="Install Sri Siva Medicals App">
+        <button id="pwaCloseBtn" class="pwa-close-btn" aria-label="Close install banner">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="pwa-banner-content">
+            <img src="images/icon-192.png" alt="Sri Siva Medicals App Icon" class="pwa-app-icon" width="48" height="48">
+            <div class="pwa-banner-text">
+                <h4 class="pwa-banner-title">Install Sri Siva Medicals</h4>
+                <p class="pwa-banner-desc">Quick access to our pharmacy website.</p>
+            </div>
+            <button id="pwaInstallBtn" class="pwa-install-btn">
+                <span id="pwaInstallBtnText">Install</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- =====================================================
+         PWA IOS INSTALL INSTRUCTION MODAL
+    ===================================================== -->
+    <div id="pwaIosModal" class="pwa-ios-modal" aria-hidden="true" role="dialog" aria-labelledby="pwaIosTitle">
+        <div class="pwa-ios-backdrop" id="pwaIosBackdrop"></div>
+        <div class="pwa-ios-card">
+            <button id="pwaIosCloseBtn" class="pwa-ios-close-btn" aria-label="Close iOS guide">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="pwa-ios-header">
+                <img src="images/icon-192.png" alt="Sri Siva Medicals" class="pwa-ios-icon" width="52" height="52">
+                <div>
+                    <h3 id="pwaIosTitle">Install Sri Siva Medicals</h3>
+                    <p>Add to your iPhone or iPad Home Screen</p>
+                </div>
+            </div>
+            <div class="pwa-ios-steps">
+                <div class="pwa-step">
+                    <span class="pwa-step-num">1</span>
+                    <p>Open this website in <strong>Safari</strong> on your iPhone or iPad.</p>
+                </div>
+                <div class="pwa-step">
+                    <span class="pwa-step-num">2</span>
+                    <p>Tap the <strong>Share</strong> button <i class="fa-solid fa-arrow-up-from-bracket pwa-share-icon"></i> at the bottom of the screen.</p>
+                </div>
+                <div class="pwa-step">
+                    <span class="pwa-step-num">3</span>
+                    <p>Scroll down and select <strong>Add to Home Screen</strong> <i class="fa-regular fa-square-plus pwa-plus-icon"></i>.</p>
+                </div>
+                <div class="pwa-step">
+                    <span class="pwa-step-num">4</span>
+                    <p>Tap <strong>Add</strong> in the top-right corner to finish.</p>
+                </div>
+            </div>
+            <button id="pwaIosGotItBtn" class="pwa-ios-got-it-btn">Got It</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
