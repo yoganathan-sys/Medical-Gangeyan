@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Sri Siva Medicals - Your trusted healthcare partner. Prescription support, healthcare guidance and pharmacy services.">
+
+    <title>Sri Siva Medicals | Trusted Healthcare Partner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<style>
+/* Location section - polished layout matching the existing red/white theme */
+.location-section {
+    position: relative;
+    padding: 88px 0;
+    background: linear-gradient(180deg, #fff 0%, #fff8f8 100%);
+    overflow: hidden;
+}
+.location-section::before {
+    content: "";
+    position: absolute;
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    background: rgba(229, 57, 53, .055);
+    top: -115px; right: -85px;
+    pointer-events: none;
+}
+.location-section > .container { position: relative; z-index: 1; }
+.location-section .section-heading { text-align: center; max-width: 680px; margin: 0 auto 42px; }
+.location-section .section-heading .section-label {
+    display: inline-block; margin-bottom: 12px; color: #df3434;
+    font-size: 12px; font-weight: 800; letter-spacing: 2px;
+}
+.location-section .section-heading h2 { margin: 0 0 12px; color: #172f35; font-size: clamp(28px, 4vw, 40px); line-height: 1.2; }
+.location-section .section-heading h2 span { color: #df3434; }
+.location-section .section-heading p { margin: 0; color: #718087; font-size: 15px; }
+.location-container {
+    display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.5fr);
+    gap: 24px; align-items: stretch;
+    max-width: 1120px; margin: 0 auto;
+}
+.location-details {
+    position: relative; display: flex; flex-direction: column; align-items: flex-start;
+    justify-content: center; padding: 38px 32px; min-height: 390px;
+    background: #fff; border: 1px solid #f0dddd; border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(44, 25, 25, .07);
+}
+.location-icon {
+    display: grid; place-items: center; width: 58px; height: 58px;
+    margin-bottom: 22px; border-radius: 16px;
+    background: #fff0f0; color: #df3434; font-size: 23px;
+}
+.location-details h3 { margin: 0 0 12px; color: #172f35; font-size: 23px; font-weight: 800; }
+.location-details p { margin: 0 0 26px; color: #6e7e84; font-size: 15px; line-height: 1.8; }
+.location-button {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    min-height: 48px; padding: 0 22px; border-radius: 9px;
+    background: #df3434; color: #fff !important; text-decoration: none;
+    font-size: 14px; font-weight: 700; box-shadow: 0 7px 18px rgba(223, 52, 52, .2);
+    transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.location-button:hover { background: #c62828; transform: translateY(-2px); box-shadow: 0 10px 22px rgba(223, 52, 52, .25); }
+.location-map {
+    min-height: 390px; overflow: hidden; border-radius: 18px;
+    border: 1px solid #eadede; background: #f5f5f5;
+    box-shadow: 0 12px 35px rgba(44, 25, 25, .08);
+}
+.location-map iframe { display: block; width: 100%; height: 100%; min-height: 390px; border: 0; }
+@media (max-width: 768px) {
+    .location-section { padding: 62px 0; }
+    .location-section .section-heading { margin-bottom: 28px; }
+    .location-container { grid-template-columns: 1fr; gap: 18px; }
+    .location-details { min-height: auto; padding: 28px 24px; }
+    .location-map, .location-map iframe { min-height: 310px; height: 310px; }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container nav-container">
+<a href="#home" class="logo">
+    <img
+        src="images/image.png"
+        alt="Shiva Medicals Logo"
+    >
+	 <span class="brand-name">
+        <strong>Sri Siva</strong>
+        <small>Medicals</small>
+    </span>
+</a>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav" id="nav">
+
+            <a href="#home">Home</a>
+
+            <a href="#prescription">
+                Prescription
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="shop.html">
+                Our Shop
+            </a>
+
+            <a href="#location">
+                Location
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                <i class="fa-solid fa-heart-pulse"></i>
+                YOUR HEALTH, OUR PRIORITY
+            </span>
+
+           <h1>
+    Trusted Care
+    <span>For a Healthier Life</span>
+</h1>
+
+<p>
+    Quality pharmacy support, professional guidance,
+    and care you can depend on.
+</p>
+
+            <div class="hero-buttons">
+
+                <a href="#prescription" class="btn btn-primary">
+                    <i class="fa-solid fa-file-prescription"></i>
+                    Prescription Enquiry
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fa-solid fa-phone"></i>
+                    Contact Us
+                </a>
+
+            </div>
+
+            <div class="hero-info">
+
+                <div class="hero-info-item">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <div>
+                        <strong>Opening Hours</strong>
+                        <span>9:00 AM - 8:00 PM</span>
+                    </div>
+
+                </div>
+
+                <div class="hero-info-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <strong>Our Location</strong>
+                        <span>Kurisilapattu, Tamil Nadu</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="medical-circle">
+
+                <div class="medical-cross">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <i class="fa-solid fa-stethoscope"></i>
+
+            </div>
+
+            <div class="floating-card card-one">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <div>
+                    <strong>Trusted Care</strong>
+                    <span>Professional Support</span>
+                </div>
+
+            </div>
+
+            <div class="floating-card card-two">
+
+                <i class="fa-solid fa-user-doctor"></i>
+
+                <div>
+                    <strong>Healthcare</strong>
+                    <span>Guidance & Support</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK SERVICES
+===================================================== -->
+
+<section class="quick-services">
+
+    <div class="container quick-grid">
+
+        <div class="quick-card">
+
+            <div class="quick-icon">
+                <i class="fa-solid fa-file-prescription"></i>
+            </div>
+
+            <div>
+                <h3>Prescription Support</h3>
+
+                <p>
+                    Enquire about your prescribed medicines
+                    through WhatsApp.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <div class="quick-icon">
+                <i class="fa-solid fa-user-doctor"></i>
+            </div>
+
+            <div>
+                <h3>Healthcare Guidance</h3>
+
+                <p>
+                    Get general guidance and support from
+                    our pharmacy team.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <div class="quick-icon">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div>
+                <h3>Convenient Hours</h3>
+
+                <p>
+                    Visit us during our convenient
+                    pharmacy opening hours.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PRESCRIPTION SECTION
+===================================================== -->
+
+<section class="prescription section" id="prescription">
+
+    <div class="container prescription-container">
+
+        <div class="prescription-content">
+
+            <span class="section-label">
+                PRESCRIPTION SUPPORT
+            </span>
+
+            <h2>
+                Have a Prescription?
+                <span>Let's Help You.</span>
+            </h2>
+
+            <p>
+                If you have a prescription and would like to
+                enquire about medicine availability, contact
+                our pharmacy through WhatsApp.
+            </p>
+
+            <div class="prescription-points">
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Prescription enquiry</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Availability confirmation</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Pharmacy support</span>
+                </div>
+
+            </div>
+
+            <button
+                class="btn btn-primary"
+                onclick="prescriptionEnquiry()">
+
+                <i class="fa-brands fa-whatsapp"></i>
+                Enquire on WhatsApp
+
+            </button>
+
+        </div>
+
+
+        <div class="prescription-image">
+
+            <div class="prescription-box">
+
+                <i class="fa-solid fa-file-prescription"></i>
+
+                <h3>Prescription</h3>
+
+                <p>
+                    Send your enquiry to our pharmacy.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="services section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                OUR SERVICES
+            </span>
+
+            <h2>
+                Pharmacy Services You Can
+                <span>Trust</span>
+            </h2>
+
+            <p>
+                We provide reliable pharmacy and healthcare
+                support for our customers.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-prescription-bottle-medical"></i>
+                </div>
+
+                <h3>
+                    Prescription Support
+                </h3>
+
+                <p>
+                    Enquire about medicines mentioned
+                    in your prescription.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+
+                <h3>
+                    Pharmacy Enquiry
+                </h3>
+
+                <p>
+                    Contact us for general pharmacy
+                    related enquiries.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+
+                <h3>
+                    Healthcare Support
+                </h3>
+
+                <p>
+                    Friendly support for your everyday
+                    healthcare needs.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+
+                <h3>
+                    Professional Guidance
+                </h3>
+
+                <p>
+                    Get appropriate guidance from our
+                    pharmacy team.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="about section" id="about">
+
+    <div class="container about-container">
+
+        <div class="about-image">
+
+            <div class="about-main-icon">
+                <i class="fa-solid fa-house-medical"></i>
+            </div>
+
+            <div class="about-badge">
+
+                <strong>Trusted</strong>
+
+                <span>Healthcare Partner</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="section-label">
+                ABOUT US
+            </span>
+
+            <h2>
+                Your Trusted Local
+                <span>Pharmacy</span>
+            </h2>
+
+            <p>
+                Shiva Medicals is committed to supporting
+                the healthcare needs of our local community.
+                Our goal is to provide a professional,
+                friendly and reliable pharmacy experience.
+            </p>
+
+            <p>
+                We focus on customer care, prescription
+                support and convenient communication with
+                our pharmacy team.
+            </p>
+
+
+            <div class="about-features">
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span>
+                        Customer-focused service
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span>
+                        Reliable pharmacy support
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span>
+                        Professional approach
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span>
+                        Easy WhatsApp communication
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT / GET IN TOUCH
+===================================================== -->
+
+<section class="contact section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-heading">
+
+            <span class="contact-label">
+                GET IN TOUCH
+            </span>
+
+            <h2>
+                Let's Talk About
+                <span>Your Healthcare Needs</span>
+            </h2>
+
+            <p>
+                Have questions about our pharmacy services or
+                need help with a prescription? Call or message
+                us directly at <strong>+91 99942 60284</strong>.
+            </p>
+
+        </div>
+
+
+        <div class="contact-wrapper">
+
+            <!-- LEFT SIDE -->
+
+            <div class="contact-info">
+
+                <!-- Direct Call -->
+
+                <div class="contact-info-card">
+
+                    <div class="contact-info-icon call-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Direct Call</h3>
+
+                        <p>
+                            Speak directly with our pharmacy team
+                        </p>
+
+                        <a href="tel:+919994260284">
+                            +91 99942 60284
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- WhatsApp -->
+
+                <div class="contact-info-card">
+
+                    <div class="contact-info-icon whatsapp-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>WhatsApp Enquiry</h3>
+
+                        <p>
+                            Quick pharmacy enquiries and support
+                        </p>
+
+                        <a
+                            href="https://wa.me/919994260284"
+                            target="_blank"
+                            class="whatsapp-link">
+
+                            Chat on WhatsApp
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="contact-info-card">
+
+                    <div class="contact-info-icon email-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Email Enquiries</h3>
+
+                        <p>
+                            Send us your questions and enquiries
+                        </p>
+
+                        <a href="mailto:gangeyanm8@gmail.com">
+                            gangeyanm8@gmail.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+</div>
+
+            <!-- RIGHT SIDE FORM -->
+
+            <div class="contact-form-card">
+
+                <form id="contactForm">
+
+                    <div class="form-group full-width">
+
+                        <label for="fullName">
+                            <i class="fa-regular fa-user"></i>
+                            Full Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="mobile">
+                                <i class="fa-solid fa-phone"></i>
+                                Mobile Number <span>*</span>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="mobile"
+                                placeholder="e.g. 9876543210"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                <i class="fa-regular fa-envelope"></i>
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="e.g. yourname@gmail.com">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="subject">
+                            <i class="fa-regular fa-bookmark"></i>
+                            Subject <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="e.g. Prescription enquiry"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="message">
+                            <i class="fa-regular fa-message"></i>
+                            Message <span>*</span>
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Tell us how we can help you..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="contact-submit">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        Send Enquiry on WhatsApp
+
+                    </button>
+
+                    <p class="form-note">
+                        <i class="fa-solid fa-lock"></i>
+                        Your enquiry will be sent securely through WhatsApp.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="location-section" id="location">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">FIND OUR SHOP</span>
+            <h2>Visit <span>Sri Siva Medicals</span></h2>
+            <p>Find our pharmacy location and visit us.</p>
+        </div>
+
+        <div class="location-container">
+
+            <div class="location-details">
+                <div class="location-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <h3>Sri Siva Medicals</h3>
+
+                <p>
+                    Kurisilapattu, Tamil Nadu, India
+                </p>
+
+                <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=12.5132132%2C78.656185"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="location-button">
+
+                    <i class="fas fa-directions"></i>
+                    Get Directions
+                </a>
+            </div>
+
+            <div class="location-map">
+                <iframe
+                    src="https://www.google.com/maps?q=Sri+Siva+Medicals,+Kurisilapattu,+Tamil+Nadu&output=embed"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     OWNER DETAILS
+===================================================== -->
+
+<section class="owner section" id="owner">
+
+    <div class="container owner-container">
+
+        <div class="owner-photo">
+
+            <div class="owner-avatar">
+                <img src="images/gangeyan.png" alt="Mr. Gangeyan, owner of Sri Siva Medicals" class="owner-photo-image">
+            </div>
+
+        </div>
+
+
+        <div class="owner-content">
+
+            <span class="section-label">
+                MEET THE OWNER
+            </span>
+
+            <h2>
+                Your Trusted
+                <span>Pharmacy Partner</span>
+            </h2>
+
+            <h3>
+                Mr. Gangeyan
+            </h3>
+
+            <p class="owner-role">
+                Owner &amp; Pharmacist
+            </p>
+
+            <p>
+                With a commitment to quality healthcare and
+                customer satisfaction, our pharmacy strives
+                to provide reliable service and professional
+                support to every customer.
+            </p>
+
+            <div class="owner-details">
+
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <span>
+                        <strong>Owner</strong>
+                        Mr. Gangeyan
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>
+                        <strong>Qualification</strong>
+                        [Qualification]
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <strong>Contact</strong>
+                        +91 99942 60284
+                    </span>
+                </div>
+
+            </div>
+
+            <a href="#contact" class="btn btn-primary">
+                <i class="fa-solid fa-phone"></i>
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo footer-logo">
+                <img
+                    src="images/image.png"
+                    alt="Shiva Medicals Logo"
+                    class="logo-image"
+                >
+            </a>
+
+            <p>
+                Your trusted healthcare partner,
+                committed to providing reliable
+                pharmacy support.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#prescription">Prescription</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="shop.html">Our Shop</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <a href="tel:+919994260284">
+                <i class="fa-solid fa-phone"></i>
+                +91 99942 60284
+            </a>
+
+            <a href="https://wa.me/919994260284"
+               target="_blank">
+
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+
+            </a>
+
+            <span>
+                <i class="fa-solid fa-location-dot"></i>
+                Kurisilapattu, Tamil Nadu
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 Shiva Medicals.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Created By <strong>Yoganathan_A</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+</footer>
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a
+    href="https://wa.me/919994260284"
+    class="floating-whatsapp"
+    target="_blank"
+    aria-label="Chat on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

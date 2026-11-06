@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Medical Shop | Sri Siva Medicals</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* SHOP GALLERY PAGE */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: #12343b;
+        }
+
+        .shop-hero {
+            padding: 85px 20px 65px;
+            text-align: center;
+            background: linear-gradient(135deg, #fff5f5, #ffffff);
+        }
+
+        .shop-label {
+            color: #e53935;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+        }
+
+        .shop-hero h1 {
+            font-size: clamp(35px, 5vw, 55px);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .shop-hero h1 span {
+            color: #e53935;
+        }
+
+        .shop-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #71878c;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .shop-gallery {
+            padding: 75px 0;
+        }
+
+        .shop-container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+        .gallery-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .gallery-heading h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .gallery-heading h2 span {
+            color: #e53935;
+        }
+
+        .gallery-heading p {
+            color: #71878c;
+            font-size: 14px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .gallery-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 18px;
+            background: #fff;
+            border: 1px solid #e5eeee;
+            box-shadow: 0 12px 35px rgba(18,52,59,.06);
+            transition: .35s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(18,52,59,.12);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform .5s ease;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.06);
+        }
+
+        .gallery-content {
+            padding: 22px;
+        }
+
+        .gallery-content span {
+            color: #e53935;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .gallery-content h3 {
+            font-size: 19px;
+            margin: 8px 0;
+        }
+
+        .gallery-content p {
+            font-size: 13px;
+            color: #71878c;
+            line-height: 1.7;
+        }
+
+        .shop-message {
+            padding: 70px 20px;
+            text-align: center;
+            background: #fff5f5;
+        }
+
+        .shop-message h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            margin-bottom: 15px;
+        }
+
+        .shop-message h2 span {
+            color: #e53935;
+        }
+
+        .shop-message p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            color: #71878c;
+            line-height: 1.8;
+        }
+
+        .shop-contact-btn {
+            display: inline-flex;
+            padding: 15px 25px;
+            background: #e53935;
+            color: white;
+            text-decoration: none;
+            border-radius: 9px;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .shop-contact-btn:hover {
+            background: #c62828;
+            transform: translateY(-3px);
+        }
+
+        .shop-footer {
+            padding: 25px;
+            text-align: center;
+            background: #102f35;
+            color: #fff;
+            font-size: 13px;
+        }
+
+        @media(max-width: 850px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 550px) {
+            .shop-hero {
+                padding: 60px 18px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-card img {
+                height: 230px;
+            }
+
+            .gallery-heading h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="shop-hero">
+
+        <div class="shop-label">WELCOME TO SRI SIVA MEDICALS</div>
+
+        <h1>
+            A Place Where <span>Care</span><br>
+            Meets <span>Trust</span>
+        </h1>
+
+        <p>
+            Discover Sri Siva Medicals – your trusted neighbourhood
+            pharmacy. Explore our shop, our organized medicine sections
+            and the environment where customer care comes first.
+            Your health and well-being are always our priority.
+        </p>
+
+    </section>
+
+
+    <!-- SIX IMAGE GALLERY -->
+    <section class="shop-gallery">
+
+        <div class="shop-container">
+
+            <div class="gallery-heading">
+                <h2>Explore <span>Our Shop</span></h2>
+
+                <p>
+                    Take a look inside Sri Siva Medicals
+                    and discover our pharmacy environment.
+                </p>
+            </div>
+
+
+            <div class="gallery-grid">
+
+                
+
+                <!-- IMAGE 2 -->
+                <div class="gallery-card">
+                    <img src="images/shop-2.jpeg"
+                         alt="Organized medicine shelves">
+
+                    <div class="gallery-content">
+                        <span>01 / ORGANIZATION</span>
+                        <h3>Organized Medicine Sections</h3>
+                        <p>
+                            Carefully arranged medicine shelves
+                            for convenient identification.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- IMAGE 3 -->
+                <div class="gallery-card">
+                    <img src="images/shop-3.jpeg"
+                         alt="Pharmacy medicine collection">
+
+                    <div class="gallery-content">
+                        <span>02 / OUR COLLECTION</span>
+                        <h3>Medicine Collection</h3>
+                        <p>
+                            A variety of healthcare and
+                            pharmaceutical products.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- IMAGE 4 -->
+                <div class="gallery-card">
+                    <img src="images/shop-4.jpeg"
+                         alt="Pharmacy customer service counter">
+
+                    <div class="gallery-content">
+                        <span>03 / CUSTOMER CARE</span>
+                        <h3>Customer Service</h3>
+                        <p>
+                            Friendly assistance and support
+                            for our customers.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- IMAGE 5 -->
+                <div class="gallery-card">
+                    <img src="images/shop-5.jpeg"
+                         alt="Pharmacy store shelves">
+
+                    <div class="gallery-content">
+                        <span>06 / OUR FACILITY</span>
+                        <h3>Our Store Facilities</h3>
+                        <p>
+                            A neat and organized space
+                            for everyday pharmacy needs.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- IMAGE 6 -->
+                <div class="gallery-card">
+                    <img src="images/shop-6.jpeg"
+                         alt="Sri Siva Medicals pharmacy">
+
+                    <div class="gallery-content">
+                        <span>05 / OUR COMMITMENT</span>
+                        <h3>Care You Can Trust</h3>
+                        <p>
+                            Committed to quality service
+                            and responsible healthcare support.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FINAL MESSAGE -->
+    <section class="shop-message">
+
+        <h2>
+            Your Health Is Our <span>Priority</span>
+        </h2>
+
+        <p>
+            At Sri Siva Medicals, we believe that every customer
+            deserves care, attention and reliable pharmacy service.
+            Visit us and experience the difference.
+        </p>
+
+        <a href="https://wa.me/919994260284"
+           class="shop-contact-btn"
+           target="_blank"
+           rel="noopener noreferrer">
+            Contact Sri Siva Medicals
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="shop-footer">
+        © 2026 Sri Siva Medicals. All Rights Reserved.
+        | Your Health, Our Priority.
+    </footer>
+
+</body>
+</html>
