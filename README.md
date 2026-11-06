@@ -1,5 +1,7 @@
 # Sri Siva Medicals - Healthcare & Pharmacy Web Application
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A modern, responsive, and user-centric website built for **Sri Siva Medicals (Kangeyan / Gangeyan)**. Designed to provide easy access to essential pharmacy services, prescription enquiries, healthcare guidance, store showcases, and instant WhatsApp communication.
 
 ---
@@ -44,6 +46,7 @@ Medical-Gangeyan/
 ├── style.css                # Global styling, animations, and responsive breakpoints
 ├── script.js                # Mobile navigation and WhatsApp form handler
 ├── .gitignore               # Ignored system and temporary files
+├── LICENSE                  # MIT License
 └── README.md                # Project documentation
 ```
 
@@ -88,4 +91,6 @@ Because this is a pure front-end web project with HTML5, CSS3, and JavaScript, n
 
 ## 📄 License
 
-This project is maintained for Sri Siva Medicals. All rights reserved.
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
+
+
